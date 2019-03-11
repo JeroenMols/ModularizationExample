@@ -1,5 +1,5 @@
 include ':app'
 include ':features:login'
-include ':features:photos'
+include ':features:dashboard'
 include ':features:sharing'
 include ':libraries:ui-components'

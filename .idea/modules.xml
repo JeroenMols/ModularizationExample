@@ -4,10 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ModularizationExample.iml" filepath="$PROJECT_DIR$/ModularizationExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/dashboard/dashboard.iml" filepath="$PROJECT_DIR$/features/dashboard/dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/features/features.iml" filepath="$PROJECT_DIR$/features/features.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/features/login/login.iml" filepath="$PROJECT_DIR$/features/login/login.iml" />
-      <module fileurl="file://$PROJECT_DIR$/features/photos/photos.iml" filepath="$PROJECT_DIR$/features/photos/photos.iml" />
       <module fileurl="file://$PROJECT_DIR$/features/sharing/sharing.iml" filepath="$PROJECT_DIR$/features/sharing/sharing.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/ui-components/ui-components.iml" filepath="$PROJECT_DIR$/libraries/ui-components/ui-components.iml" />
     </modules>
