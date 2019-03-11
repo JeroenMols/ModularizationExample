@@ -26,4 +26,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-rc02'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-rc02'
 }
