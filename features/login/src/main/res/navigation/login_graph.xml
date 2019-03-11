@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/loggedInFragment"
-        android:name="modularization.login.LoggedInFragment"
+        android:name="modularization.login.AvatarFragment"
         android:label="LoggedInFragment"
-        tools:layout="@layout/fragment_loggedin" />
+        tools:layout="@layout/fragment_avatar" />
 </navigation>
