@@ -28,6 +28,7 @@ dependencies {
     implementation project(':features:sharing')
     implementation project(':features:login')
     implementation project(':libraries:ui-components')
+    implementation project(':libraries:actions')
 
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'

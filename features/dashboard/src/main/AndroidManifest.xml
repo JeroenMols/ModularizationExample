@@ -1,6 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="modularization.dashboard">
 
-    <application android:theme="@style/AppTheme" />
+    <application android:theme="@style/AppTheme" >
+        <activity android:name=".DashboardActivity">
+            <intent-filter>
+                <action android:name="com.jeroenmols.modularization.dashboard.open"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

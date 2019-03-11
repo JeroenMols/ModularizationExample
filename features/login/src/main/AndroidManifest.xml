@@ -2,7 +2,12 @@
     package="modularization.login" >
 
     <application android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="com.jeroenmols.modularization.login.open"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
