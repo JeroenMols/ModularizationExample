@@ -40,8 +40,6 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.0.0-rc02"
     implementation "androidx.navigation:navigation-ui-ktx:2.0.0-rc02"
     implementation "androidx.core:core-ktx:1.0.1"
-    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-rc02"
-    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-rc02"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
