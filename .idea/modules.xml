@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ModularizationExample.iml" filepath="$PROJECT_DIR$/ModularizationExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/features.iml" filepath="$PROJECT_DIR$/features/features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/login/login.iml" filepath="$PROJECT_DIR$/features/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/photos/photos.iml" filepath="$PROJECT_DIR$/features/photos/photos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/sharing/sharing.iml" filepath="$PROJECT_DIR$/features/sharing/sharing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/ui-components/ui-components.iml" filepath="$PROJECT_DIR$/libraries/ui-components/ui-components.iml" />
+    </modules>
+  </component>
+</project>
