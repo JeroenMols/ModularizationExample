@@ -24,6 +24,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':features:dashboard')
+    implementation project(':features:sharing')
+    implementation project(':features:login')
     implementation project(':libraries:ui-components')
 
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
