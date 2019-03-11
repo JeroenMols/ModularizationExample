@@ -19,7 +19,7 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic[13]" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_login_start"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
