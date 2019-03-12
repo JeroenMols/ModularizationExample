@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_favorites"
+        android:id="@+id/action_photos"
         android:enabled="true"
         android:icon="@drawable/ic_insert_photo_black_24dp"
         android:title="Photos"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_schedules"
+        android:id="@+id/action_albums"
         android:enabled="true"
         android:icon="@drawable/ic_collections_bookmark_black_24dp"
         android:title="Albums"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_music"
+        android:id="@+id/action_sharing"
         android:enabled="true"
         android:icon="@drawable/ic_people_black_24dp"
         android:title="Sharing"

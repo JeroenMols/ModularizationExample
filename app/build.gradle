@@ -23,7 +23,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':features:dashboard')
     implementation project(':features:sharing')
     implementation project(':features:login')

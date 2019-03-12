@@ -1,6 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="modularization.sharing" >
 
-    <application android:theme="@style/AppTheme" />
+    <application android:theme="@style/AppTheme" >
+        <activity android:name=".SharingActivity">
+            <intent-filter>
+                <action android:name="com.jeroenmols.modularization.sharing.open"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
