@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <ImageView
+        android:id="@+id/imageView_social_twitter"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:tint="#38A1F3"
+        app:layout_constraintBottom_toBottomOf="@+id/button_social_facebook"
+        app:layout_constraintStart_toStartOf="@+id/imageView_social_email"
+        app:layout_constraintTop_toTopOf="@+id/button_social_facebook"
+        app:srcCompat="@drawable/twitter" />
+
+    <Button
+        android:id="@+id/button_social_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@drawable/envelope"
+        android:drawableTint="#f00"
+        android:text="Share on twitter"
+        app:layout_constraintStart_toStartOf="@+id/button_social_email"
+        app:layout_constraintTop_toBottomOf="@+id/button_social_email" />
+
+
+    <ImageView
+        android:id="@+id/imageView_social_email"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:tint="#D44638"
+        app:layout_constraintBottom_toBottomOf="@+id/button_social_email"
+        app:layout_constraintEnd_toStartOf="@+id/button_social_email"
+        app:layout_constraintTop_toTopOf="@+id/button_social_email"
+        app:srcCompat="@drawable/envelope" />
+
+    <Button
+        android:id="@+id/button_social_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawableStart="@drawable/envelope"
+        android:drawableTint="#f00"
+        android:text="Share via email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_social_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_social_facebook"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:tint="#4267b2"
+        app:layout_constraintBottom_toBottomOf="@+id/button_social_twitter"
+        app:layout_constraintStart_toStartOf="@+id/imageView_social_email"
+        app:layout_constraintTop_toTopOf="@+id/button_social_twitter"
+        app:srcCompat="@drawable/facebook" />
+
+
+    <Button
+        android:id="@+id/button_social_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:drawableStart="@drawable/envelope"
+        android:drawableTint="#f00"
+        android:text="Share on facebook"
+        app:layout_constraintBottom_toTopOf="@+id/button_social_email"
+        app:layout_constraintStart_toStartOf="@+id/button_social_email" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
