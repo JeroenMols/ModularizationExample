@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/dashboard_graph"
-    app:startDestination="@id/photosFragment">
+    android:id="@+id/dashboard_graph">
+
+    <!--Dummy graph, just used to display screens in feature -->
 
     <fragment
         android:id="@+id/photosFragment"
         android:name="modularization.dashboard.PhotosFragment"
         android:label="PhotosFragment"
-        tools:layout="@layout/fragment_photos"/>
+        tools:layout="@layout/fragment_photos" />
+
+    <fragment
+        android:id="@+id/albumsFragment"
+        android:name="modularization.dashboard.AlbumsFragment"
+        android:label="AlbumsFragment"
+        tools:layout="@layout/fragment_albums" />
+
+    <fragment
+        android:id="@+id/socialFragment"
+        android:name="modularization.dashboard.SocialFragment"
+        android:label="SocialFragment"
+        tools:layout="@layout/fragment_social" />
 </navigation>

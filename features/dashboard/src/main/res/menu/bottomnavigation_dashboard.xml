@@ -4,19 +4,19 @@
     <item
         android:id="@+id/action_photos"
         android:enabled="true"
-        android:icon="@drawable/ic_insert_photo_black_24dp"
+        android:icon="@drawable/photos"
         android:title="Photos"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_albums"
         android:enabled="true"
-        android:icon="@drawable/ic_collections_bookmark_black_24dp"
+        android:icon="@drawable/albums"
         android:title="Albums"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_sharing"
         android:enabled="true"
-        android:icon="@drawable/ic_people_black_24dp"
+        android:icon="@drawable/social"
         android:title="Sharing"
         app:showAsAction="always" />
 </menu>
