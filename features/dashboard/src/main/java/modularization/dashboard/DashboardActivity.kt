@@ -25,7 +25,7 @@ class DashboardActivity : AppCompatActivity() {
                             Toast.makeText(this@DashboardActivity, "Open albums tab", Toast.LENGTH_SHORT).show()
                         }
                         R.id.action_sharing -> {
-                            startActivity(openSharingIntent())
+                            startActivity(openSharingIntent(this@DashboardActivity))
                         }
                     }
                     return false

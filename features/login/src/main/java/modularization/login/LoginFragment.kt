@@ -12,7 +12,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_login, container, false)
         view.findViewById<Button>(R.id.button_login_signin).setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_loggedInFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_avatarFragment)
         }
         return view;
     }

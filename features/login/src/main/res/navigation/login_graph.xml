@@ -20,12 +20,12 @@
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
-            android:id="@+id/action_loginFragment_to_loggedInFragment"
-            app:destination="@id/loggedInFragment" />
+            android:id="@+id/action_loginFragment_to_avatarFragment"
+            app:destination="@id/avatarFragment" />
     </fragment>
     <fragment
-        android:id="@+id/loggedInFragment"
+        android:id="@+id/avatarFragment"
         android:name="modularization.login.AvatarFragment"
-        android:label="LoggedInFragment"
+        android:label="AvatarFragment"
         tools:layout="@layout/fragment_avatar" />
 </navigation>
