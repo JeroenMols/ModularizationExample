@@ -2,34 +2,30 @@ package modularization.dashboard
 
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
-import androidx.annotation.NonNull
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.activity_dashboard.*
 import modularization.dashboard.R.layout
-import modularization.libraries.actions.Actions.openSharingIntent
 
 class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_dashboard)
 
-        findViewById<BottomNavigationView>(R.id.bottomNavigation).setOnNavigationItemSelectedListener(
-            object : BottomNavigationView.OnNavigationItemSelectedListener {
-                override fun onNavigationItemSelected(@NonNull item: MenuItem): Boolean {
-                    when (item.getItemId()) {
-                        R.id.action_photos -> {
-                            Toast.makeText(this@DashboardActivity, "Open photos tab", Toast.LENGTH_SHORT).show()
-                        }
-                        R.id.action_albums -> {
-                            Toast.makeText(this@DashboardActivity, "Open albums tab", Toast.LENGTH_SHORT).show()
-                        }
-                        R.id.action_sharing -> {
-                            startActivity(openSharingIntent(this@DashboardActivity))
-                        }
-                    }
-                    return false
-                }
-            })
+        bottomNavigation.setOnNavigationItemSelectedListener(::tabSelected)
+        showFragment(PhotosFragment())
+    }
+
+    private fun tabSelected(tab: MenuItem): Boolean {
+        when (tab.getItemId()) {
+            R.id.action_photos -> showFragment(PhotosFragment())
+            R.id.action_albums -> showFragment(AlbumsFragment())
+            R.id.action_sharing -> showFragment(SocialFragment())
+        }
+        return false
+    }
+
+    private fun showFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).commit()
     }
 }
