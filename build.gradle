@@ -1,17 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.3.21'
     repositories {
         google()
         jcenter()
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0-rc02'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath Deps.tools_gradleandroid
+        classpath Deps.tools_kotlin
     }
 }
 
@@ -27,18 +24,18 @@ subprojects {
     afterEvaluate { project ->
         if (project.plugins.findPlugin('android') ?: project.plugins.findPlugin('android-library')) {
             android {
-                buildToolsVersion "28.0.3"
-                compileSdkVersion 28
+                buildToolsVersion Config.buildTools
+                compileSdkVersion Config.compileSdk
 
                 defaultConfig {
-                    minSdkVersion 23
-                    targetSdkVersion 28
+                    minSdkVersion Config.minSdk
+                    targetSdkVersion Config.targetSdk
                     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
                 }
 
                 compileOptions {
-                    sourceCompatibility JavaVersion.VERSION_1_8
-                    targetCompatibility JavaVersion.VERSION_1_8
+                    sourceCompatibility Config.javaVersion
+                    targetCompatibility Config.javaVersion
                 }
             }
         }
