@@ -23,6 +23,28 @@ allprojects {
     }
 }
 
+subprojects {
+    afterEvaluate { project ->
+        if (project.plugins.findPlugin('android') ?: project.plugins.findPlugin('android-library')) {
+            android {
+                buildToolsVersion "28.0.3"
+                compileSdkVersion 28
+
+                defaultConfig {
+                    minSdkVersion 23
+                    targetSdkVersion 28
+                    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+                }
+
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_1_8
+                    targetCompatibility JavaVersion.VERSION_1_8
+                }
+            }
+        }
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

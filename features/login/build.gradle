@@ -2,19 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
-android {
-    compileSdkVersion 28
-
-    defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-}
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':libraries:ui-components')
@@ -31,7 +18,4 @@ dependencies {
     implementation "androidx.core:core-ktx:1.0.1"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
-}
-repositories {
-    mavenCentral()
 }
