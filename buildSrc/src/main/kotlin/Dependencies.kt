@@ -13,7 +13,7 @@ object Versions {
     val androidx_core = "1.0.1"
     val androidx_recyclerview = "1.0.0"
     val androidx_navigation = "2.0.0"
-    val androidx_onstraintLayout = "1.1.3"
+    val androidx_constraintLayout = "1.1.3"
     val material = "1.1.0-alpha04"
     // </editor-fold>
 
@@ -32,7 +32,7 @@ object Versions {
 
 object Deps {
     val androidx_core = "androidx.core:core-ktx:${Versions.androidx_core}"
-    val androidx_constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.androidx_onstraintLayout}"
+    val androidx_constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.androidx_constraintLayout}"
     val androidx_material = "com.google.android.material:material:${Versions.material}"
     val androidx_navigation_fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.androidx_navigation}"
     val androidx_navigation_ui = "androidx.navigation:navigation-ui-ktx:${Versions.androidx_navigation}"

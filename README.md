@@ -13,3 +13,17 @@ To learn more, have a look at the following posts:
 
 - [Architecture description & benefits](https://jeroenmols.com/blog/2019/03/18/modularizationarchitecture/)
 - [Walkthrough of sample code](https://jeroenmols.com/blog/2019/04/02/modularizationexample/)
+
+![Modularized architecture](https://raw.githubusercontent.com/JeroenMols/ModularizationExample/master/readme/modularized_architecture.png)
+
+Note that all code runs and executes, but the screens only contain data in xml preview. This means running the app provides a very "empty experience", but it also keeps the example simple and focussed.
+
+# Features
+## Login
+![Login feature navigation graph](https://raw.githubusercontent.com/JeroenMols/ModularizationExample/master/readme/graph_login.jpg)
+
+## Dashboard
+![Dashboard feature navigation graph](https://raw.githubusercontent.com/JeroenMols/ModularizationExample/master/readme/graph_dashboard.jpg)
+
+## Sharing
+![Sharing feature navigation graph](https://raw.githubusercontent.com/JeroenMols/ModularizationExample/master/readme/graph_sharing.jpg)
