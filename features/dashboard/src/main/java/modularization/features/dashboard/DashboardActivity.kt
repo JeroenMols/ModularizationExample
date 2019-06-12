@@ -1,16 +1,15 @@
-package modularization.dashboard
+package modularization.features.dashboard
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_dashboard.*
-import modularization.dashboard.R.layout
 
 class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.activity_dashboard)
+        setContentView(R.layout.activity_dashboard)
 
         bottomNavigation.setOnNavigationItemSelectedListener(::tabSelected)
         showFragment(PhotosFragment())

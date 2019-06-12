@@ -1,4 +1,4 @@
-package modularization.login
+package modularization.features.login
 
 import android.os.Bundle
 import android.view.LayoutInflater

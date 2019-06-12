@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="modularization.login.WelcomeFragment"
+        android:name="modularization.features.login.WelcomeFragment"
         android:label="WelcomeFragment"
         tools:layout="@layout/fragment_welcome">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="modularization.login.LoginFragment"
+        android:name="modularization.features.login.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/avatarFragment"
-        android:name="modularization.login.AvatarFragment"
+        android:name="modularization.features.login.AvatarFragment"
         android:label="AvatarFragment"
         tools:layout="@layout/fragment_avatar" />
 </navigation>

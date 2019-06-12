@@ -1,4 +1,4 @@
-package modularization.login
+package modularization.features.dashboard
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package modularization.sharing
+package modularization.features.login
 
 import org.junit.Test
 

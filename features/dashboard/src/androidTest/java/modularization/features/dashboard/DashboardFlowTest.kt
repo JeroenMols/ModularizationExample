@@ -1,4 +1,4 @@
-package modularization.dashboard
+package modularization.features.dashboard
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click

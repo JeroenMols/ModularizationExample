@@ -1,4 +1,4 @@
-package modularization.login
+package modularization.features.login
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click

@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/photosFragment"
-        android:name="modularization.dashboard.PhotosFragment"
+        android:name="modularization.features.dashboard.PhotosFragment"
         android:label="PhotosFragment"
         tools:layout="@layout/fragment_photos" />
 
     <fragment
         android:id="@+id/albumsFragment"
-        android:name="modularization.dashboard.AlbumsFragment"
+        android:name="modularization.features.dashboard.AlbumsFragment"
         android:label="AlbumsFragment"
         tools:layout="@layout/fragment_albums" />
 
     <fragment
         android:id="@+id/socialFragment"
-        android:name="modularization.dashboard.SocialFragment"
+        android:name="modularization.features.dashboard.SocialFragment"
         android:label="SocialFragment"
         tools:layout="@layout/fragment_social" />
 </navigation>

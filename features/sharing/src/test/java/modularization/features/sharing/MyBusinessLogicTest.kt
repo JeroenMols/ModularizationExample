@@ -1,4 +1,4 @@
-package modularization.dashboard
+package modularization.features.sharing
 
 import org.junit.Test
 

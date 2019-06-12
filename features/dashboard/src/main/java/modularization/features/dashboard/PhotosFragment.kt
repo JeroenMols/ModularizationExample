@@ -1,4 +1,4 @@
-package modularization.dashboard
+package modularization.features.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package modularization.sharing
+package modularization.features.sharing
 
 import androidx.test.rule.ActivityTestRule
 import org.junit.Assert.assertTrue
