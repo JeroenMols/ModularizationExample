@@ -26,6 +26,7 @@ object Versions {
     // <editor-fold desc="tools">
     val gradleandroid = "3.5.0-beta04"
     val kotlin = "1.3.20"
+    val gradleversions = "0.21.0"
     // </editor-fold>
 
 }
@@ -46,6 +47,7 @@ object Deps {
 
     val tools_gradleandroid = "com.android.tools.build:gradle:${Versions.gradleandroid}"
     val tools_kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    val tools_gradleversions = "com.github.ben-manes:gradle-versions-plugin:${Versions.gradleversions}"
 
 }
 

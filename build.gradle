@@ -9,6 +9,7 @@ buildscript {
     dependencies {
         classpath Deps.tools_gradleandroid
         classpath Deps.tools_kotlin
+        classpath Deps.tools_gradleversions
     }
 }
 
@@ -23,6 +24,8 @@ allprojects {
 subprojects {
     afterEvaluate { project ->
         if (project.plugins.findPlugin('android') ?: project.plugins.findPlugin('android-library')) {
+            apply plugin: "com.github.ben-manes.versions"
+
             android {
                 buildToolsVersion Config.buildTools
                 compileSdkVersion Config.compileSdk
