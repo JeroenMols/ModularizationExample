@@ -1,4 +1,4 @@
-package com.jeroenmols.modularization
+package com.jeroenmols.modularization.example
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

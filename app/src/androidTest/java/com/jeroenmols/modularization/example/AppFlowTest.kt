@@ -1,4 +1,4 @@
-package com.jeroenmols.modularization;
+package com.jeroenmols.modularization.example;
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
@@ -17,9 +17,9 @@ class AppFlowTest {
 
     @Test
     fun test_criticalUserFlow_throughoutEntireApp() {
-        onView(withId(modularization.login.R.id.button_login_start)).perform(click())
-        onView(withId(modularization.login.R.id.button_login_signin)).perform(click())
-        onView(withId(modularization.login.R.id.button_login_toapp)).perform(click())
+        onView(withId(R.id.button_login_start)).perform(click())
+        onView(withId(R.id.button_login_signin)).perform(click())
+        onView(withId(R.id.button_login_toapp)).perform(click())
 
         onView(withId(R.id.action_albums)).perform(click())
         onView(withId(R.id.action_sharing)).perform(click())
