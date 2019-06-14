@@ -23,7 +23,7 @@ allprojects {
 
 subprojects {
     afterEvaluate { project ->
-        if (project.plugins.findPlugin('android') ?: project.plugins.findPlugin('android-library')) {
+        if (project.hasProperty('android')) {
             apply plugin: "com.github.ben-manes.versions"
 
             android {
